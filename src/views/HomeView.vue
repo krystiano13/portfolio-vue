@@ -1,11 +1,17 @@
 <script setup>
   import Card from "primevue/card";
+  import Button from "primevue/button";
 </script>
 
 <template>
-  <Card>
+  <Card class="m-4">
+    <template #title>
+      <h1 class="text-4xl">Hello World</h1>
+    </template>
     <template #content>
-      <h1>Hello World</h1>
+      <Button class="!text-slate-50 !font-medium">
+          Hello
+      </Button>
     </template>
   </Card>
 </template>

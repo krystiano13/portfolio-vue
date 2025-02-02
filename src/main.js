@@ -4,13 +4,17 @@ import router from './router'
 
 import PrimeVue from 'primevue/config'
 import Lara from '@primevue/themes/lara'
+import "./assets/index.css"
 
 const app = createApp(App)
 
 app.use(router)
 app.use(PrimeVue, {
     theme: {
-        preset: Lara
+        preset: Lara,
+        options: {
+            darkModeSelector: '.my-app-dark',
+        }
     }
 })
 
