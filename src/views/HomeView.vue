@@ -11,6 +11,7 @@
     <template #content>
       <Button class="!text-slate-50 !font-medium">
           Hello
+          <i class="pi pi-check"></i>
       </Button>
     </template>
   </Card>
