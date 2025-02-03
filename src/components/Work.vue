@@ -24,7 +24,7 @@
 <template>
   <div class="w-full h-auto pb-16 flex flex-col justify-center items-center">
     <h1 class="text-center text-4xl font-semibold mb-12">Work Experience</h1>
-    <section class="w-full flex justify-center items-center">
+    <section class="w-full hidden sm:flex justify-center items-center">
       <Timeline class="max-w-4xl" align="alternate" :value="data.jobs">
         <template #content="props">
           <Card>
@@ -39,6 +39,18 @@
           </Card>
         </template>
       </Timeline>
+    </section>
+    <section class="sm:hidden flex flex-col items-center gap-6 max-w-[90vw]">
+      <Card class="w-full" v-for="job in data.jobs">
+        <template #title>
+          <h2 class="text-xl sm:text-2xl">{{ job.title }}</h2>
+          <h3 class="text-lg sm:text-xl font-regular">{{ job.company }}</h3>
+          <p class="text-sm sm:text-base font-light">{{ job.time }}</p>
+        </template>
+        <template #content>
+          <p>{{ job.about }}</p>
+        </template>
+      </Card>
     </section>
   </div>
 </template>
