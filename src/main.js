@@ -4,6 +4,7 @@ import router from './router'
 
 import PrimeVue from 'primevue/config'
 import Lara from '@primevue/themes/lara'
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 
 import "./assets/index.css"
 import 'primeicons/primeicons.css'
@@ -19,5 +20,6 @@ app.use(PrimeVue, {
         }
     }
 })
+app.use(autoAnimatePlugin)
 
 app.mount('#app')

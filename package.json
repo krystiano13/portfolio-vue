@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@primevue/themes": "^4.2.5",
     "@tailwindcss/vite": "^4.0.3",
     "primeicons": "^7.0.0",
