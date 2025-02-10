@@ -2,6 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import PrimeVue from 'primevue/config'
 import Lara from '@primevue/themes/lara'
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
@@ -21,5 +24,7 @@ app.use(PrimeVue, {
     }
 })
 app.use(autoAnimatePlugin)
+
+AOS.init();
 
 app.mount('#app')

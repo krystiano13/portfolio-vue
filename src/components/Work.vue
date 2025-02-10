@@ -27,7 +27,7 @@
     <section class="w-full hidden sm:flex justify-center items-center">
       <Timeline class="max-w-4xl" align="alternate" :value="data.jobs">
         <template #content="props">
-          <Card>
+          <Card :data-aos="props.index === 0 ? 'fade-right' : 'fade-left'">
             <template #title>
               <h2 class="text-xl sm:text-2xl">{{ props.item.title }}</h2>
               <h3 class="text-lg sm:text-xl font-regular">{{ props.item.company }}</h3>
@@ -41,7 +41,7 @@
       </Timeline>
     </section>
     <section class="sm:hidden flex flex-col items-center gap-6 max-w-[90vw]">
-      <Card class="w-full" v-for="job in data.jobs">
+      <Card data-aos="fade-up" class="w-full" v-for="job in data.jobs">
         <template #title>
           <h2 class="text-xl sm:text-2xl">{{ job.title }}</h2>
           <h3 class="text-lg sm:text-xl font-regular">{{ job.company }}</h3>
