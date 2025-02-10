@@ -4,6 +4,7 @@
   import Work from "@/components/Work.vue";
   import Skills from "@/components/Skills.vue";
   import Contact from "@/components/Contact.vue";
+  import Projects from "@/components/Projects.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@
   <Hero />
   <Work />
   <Skills />
+  <Projects />
   <Contact />
 </template>
