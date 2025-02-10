@@ -3,6 +3,7 @@
   import Navbar from "@/components/Navbar.vue";
   import Work from "@/components/Work.vue";
   import Skills from "@/components/Skills.vue";
+  import Contact from "@/components/Contact.vue";
 </script>
 
 <template>
@@ -10,4 +11,5 @@
   <Hero />
   <Work />
   <Skills />
+  <Contact />
 </template>
