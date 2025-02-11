@@ -1,23 +1,11 @@
 <script setup>
   import { reactive } from "vue";
+  import { jobsData } from "@/data/jobsData.js";
   import Timeline from "primevue/timeline";
   import Card from "primevue/card";
 
   const data = reactive({
-    jobs: [
-      {
-        title: "Junior React Developer",
-        company: "Timenotes.io",
-        time: "Aug 2024 - Oct 2024",
-        about: "Creating new Timenotes' landing page with Next.js, TailwindCSS and Sanity.io .Working on Timenotes' React app"
-      },
-      {
-        title: "Intern Fullstack Developer",
-        company: "BeCode",
-        time: "Feb 2025 - Now",
-        about: "Learning how to program with technologies such as Symfony and Vue"
-      }
-    ]
+    jobs: jobsData
   });
 </script>
 
