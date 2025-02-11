@@ -7,12 +7,14 @@
   onMounted(() => {
     setInterval(() => {
         underscore.value = !underscore.value;
-    }, 1000)
+    }, 1000);
   });
 </script>
 
 <template>
-  <div id="hero" class="w-full h-[100vh] relative">
+  <div id="hero" class="w-full h-[100vh] relative mb-32">
+    <div id="stars"></div>
+    <div id="stars2"></div>
     <section class="absolute w-full h-full flex flex-col items-center justify-center gap-7 p-4 pt-8">
       <h1 class="text-6xl max-w-xl text-center font-semibold">
         Hi, I'm
