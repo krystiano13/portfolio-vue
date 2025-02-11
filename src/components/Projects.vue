@@ -17,7 +17,7 @@ function openDialog(projectId) {
 </script>
 
 <template>
-  <div class="w-full h-auto pb-16 flex flex-col justify-center items-center">
+  <div id="projects" class="w-full h-auto pb-16 flex flex-col justify-center items-center">
     <Dialog class="w-2xl" v-model:visible="dialogVisible">
       <template #header>
         <h1 class="text-2xl font-medium mr-6">

@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <div class="w-full h-auto pb-16 flex flex-col justify-center items-center">
+  <div id="contact" class="w-full h-auto pb-16 flex flex-col justify-center items-center">
     <h1 data-aos="fade-up" class="text-center text-5xl font-semibold mt-16 mb-16">
       Contact
     </h1>

@@ -12,14 +12,17 @@
 <template>
   <nav v-auto-animate class="w-full p-5 font-medium text-lg fixed z-10 backdrop-blur-lg  bg-gray-900/15">
    <section class="hidden sm:flex items-center gap-4">
-     <a href="#home">
+     <a href="#hero">
        Home
      </a>
-     <a href="#projects">
-       Projects
+     <a href="#work">
+       Experience
      </a>
      <a href="#skills">
        Skills
+     </a>
+     <a href="#projects">
+       Projects
      </a>
      <a href="#contact">
        Contact
@@ -33,6 +36,9 @@
    <section class="flex flex-col items-center gap-6 sm:hidden" v-if="navOpen">
      <a href="#home">
        Home
+     </a>
+     <a href="#work">
+       Experience
      </a>
      <a href="#projects">
        Projects

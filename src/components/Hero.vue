@@ -12,7 +12,7 @@
 </script>
 
 <template>
-  <div class="w-full h-[100vh] relative">
+  <div id="hero" class="w-full h-[100vh] relative">
     <section class="absolute w-full h-full flex flex-col items-center justify-center gap-7 p-4 pt-8">
       <h1 class="text-6xl max-w-xl text-center font-semibold">
         Hi, I'm
