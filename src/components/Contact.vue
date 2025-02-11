@@ -5,7 +5,7 @@
 
 <template>
   <div id="contact" class="w-full h-auto pb-16 flex flex-col justify-center items-center">
-    <h1 data-aos="fade-up" class="text-center text-5xl font-semibold mt-16 mb-16">
+    <h1 data-aos="fade-up" class="text-center text-4xl sm:text-5xl font-semibold mt-16 mb-16">
       Contact
     </h1>
     <form class="w-[95vw] sm:w-[36rem]">

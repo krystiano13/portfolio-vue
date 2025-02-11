@@ -41,7 +41,7 @@ function openDialog(projectId) {
         </Button>
       </a>
     </Dialog>
-    <h1 data-aos="fade-up" class="text-center text-5xl font-semibold mt-16 mb-16">
+    <h1 data-aos="fade-up" class="text-center text-4xl sm:text-5xl font-semibold mt-16 mb-16">
       Selected Projects
     </h1>
     <section
@@ -53,7 +53,7 @@ function openDialog(projectId) {
           <h2 class="text-3xl">{{ projectsData[0].name }}</h2>
         </template>
         <template #content>
-          <p class="text-xl mb-4 h-[9rem] lg:h-[11rem]">
+          <p class="text-xl mb-4 h-auto">
             {{ projectsData[0].description }}
           </p>
           <Badge class="mr-3 mb-3" severity="info">React</Badge>
@@ -77,7 +77,7 @@ function openDialog(projectId) {
           <h2 class="text-3xl">{{ projectsData[1].name }}</h2>
         </template>
         <template #content>
-          <p class="text-xl mb-4 h-[9rem] lg:h-[11rem]">
+          <p class="text-xl mb-4 h-auto">
             {{ projectsData[1].description }}
           </p>
           <Badge class="mr-3 mb-3" severity="info">React</Badge>
@@ -100,7 +100,7 @@ function openDialog(projectId) {
           <h2 class="text-3xl">{{ projectsData[2].name }}</h2>
         </template>
         <template #content>
-          <p class="text-xl mb-4 h-[9rem] lg:h-[11rem]">
+          <p class="text-xl mb-4 h-auto">
            {{ projectsData[2].description }}
           </p>
           <Badge class="mr-3 mb-3" severity="info">Javascript</Badge>

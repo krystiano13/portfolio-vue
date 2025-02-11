@@ -11,7 +11,7 @@
 
 <template>
   <div id="work" class="w-full h-auto pb-16 flex flex-col justify-center items-center">
-    <h1 data-aos="fade-up" class="text-center text-5xl font-semibold mb-24">Work Experience</h1>
+    <h1 data-aos="fade-up" class="text-center text-4xl sm:text-5xl font-semibold mb-24">Work Experience</h1>
     <section class="w-full hidden sm:flex justify-center items-center">
       <Timeline class="max-w-4xl" align="alternate" :value="data.jobs">
         <template #content="props">
