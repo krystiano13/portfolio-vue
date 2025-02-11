@@ -2,10 +2,30 @@
 import Card from "primevue/card";
 import Badge from "primevue/badge";
 import Button from "primevue/button";
+import Dialog from 'primevue/dialog';
+
+import { ref } from "vue";
+import { projectsData } from "@/data/projectsData.js";
+
+const dialogVisible = ref(false);
+const selectedProject = ref(0);
+
+function openDialog(projectId) {
+  dialogVisible.value = true;
+  selectedProject.value = projectId;
+}
 </script>
 
 <template>
   <div class="w-full h-auto pb-16 flex flex-col justify-center items-center">
+    <Dialog class="w-2xl" v-model:visible="dialogVisible">
+      <template #header>
+        <h1 class="text-2xl font-medium mr-6">
+          {{ projectsData[selectedProject].name }}
+        </h1>
+      </template>
+      <p>{{ projectsData[selectedProject].description }}</p>
+    </Dialog>
     <h1 data-aos="fade-up" class="text-center text-5xl font-semibold mt-16 mb-16">
       Selected Projects
     </h1>
@@ -14,11 +34,11 @@ import Button from "primevue/button";
     >
       <Card class="w-full lg:w-[25rem]">
         <template #title>
-          <h2 class="text-3xl">Instagram Clone</h2>
+          <h2 class="text-3xl">{{ projectsData[0].name }}</h2>
         </template>
         <template #content>
           <p class="text-xl mb-4 h-[9rem] lg:h-[11rem]">
-            Simple Instagram clone. For the frontend part, I've used React with TailwindCSS and Typescript, and for backend - Ruby on Rails. Project also contains tests for the backend written in Minitest.
+            {{ projectsData[0].description }}
           </p>
           <Badge class="mr-3 mb-3" severity="info">React</Badge>
           <Badge class="mr-3" severity="danger">Ruby on Rails</Badge>
@@ -30,6 +50,7 @@ import Button from "primevue/button";
           <Button
               class="mt-6 w-full"
               severity="secondary"
+              @click="openDialog(0)"
           >
             View More
           </Button>
@@ -37,11 +58,11 @@ import Button from "primevue/button";
       </Card>
       <Card class="w-full lg:w-[25rem]">
         <template #title>
-          <h2 class="text-3xl">FlashCard App</h2>
+          <h2 class="text-3xl">{{ projectsData[1].name }}</h2>
         </template>
         <template #content>
           <p class="text-xl mb-4 h-[9rem] lg:h-[11rem]">
-            Mobile app created with Capacitor.js - framework that allows to create mobile apps with frontend technologies (I used React, Typescript and TailwindCSS). I am currently in process of publishing it to Google Play.
+            {{ projectsData[1].description }}
           </p>
           <Badge class="mr-3 mb-3" severity="info">React</Badge>
           <Badge class="mr-3" severity="danger">Capacitor</Badge>
@@ -52,6 +73,7 @@ import Button from "primevue/button";
           <Button
               class="mt-6 w-full"
               severity="secondary"
+              @click="openDialog(1)"
           >
             View More
           </Button>
@@ -59,12 +81,11 @@ import Button from "primevue/button";
       </Card>
       <Card class="w-full lg:w-[25rem]">
         <template #title>
-          <h2 class="text-3xl">Hospital doors</h2>
+          <h2 class="text-3xl">{{ projectsData[2].name }}</h2>
         </template>
         <template #content>
           <p class="text-xl mb-4 h-[9rem] lg:h-[11rem]">
-            Hospital doors is simple survival horror game made in Gdevelop with help of Magica Voxel.
-            Your objective is to find 7 keys and escape from the location, but you need to be aware of monsters roaming around the map.
+           {{ projectsData[2].description }}
           </p>
           <Badge class="mr-3 mb-3" severity="info">Javascript</Badge>
           <Badge class="mr-3" severity="danger">GDevelop Game Engine</Badge>
@@ -74,6 +95,7 @@ import Button from "primevue/button";
           <Button
               class="mt-6 w-full"
               severity="secondary"
+              @click="openDialog(2)"
           >
             View More
           </Button>
