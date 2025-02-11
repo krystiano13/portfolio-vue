@@ -12,17 +12,23 @@
       <Card data-aos="fade-up">
         <template #content>
           <div class="w-full h-full flex flex-col gap-3">
-            <Button severity="secondary">
-              Email
-            </Button>
-            <Button severity="secondary">
-              <i class="devicon-github-plain"></i>
-              <span>Github</span>
-            </Button>
-            <Button severity="secondary">
-              <i class="devicon-linkedin-plain"></i>
-              <span>Linkedin</span>
-            </Button>
+            <a class="w-full block" href="mailto:crystianotv@gmail.com">
+              <Button class="w-full" severity="secondary">
+                Email
+              </Button>
+            </a>
+            <a class="w-full block" href="https://github.com/krystiano13">
+              <Button class="w-full" severity="secondary">
+                <i class="devicon-github-plain"></i>
+                <span>Github</span>
+              </Button>
+            </a>
+            <a class="w-full block" href="https://www.linkedin.com/in/krystian-zieja-1b9902253/">
+              <Button class="w-full" severity="secondary">
+                <i class="devicon-linkedin-plain"></i>
+                <span>Linkedin</span>
+              </Button>
+            </a>
           </div>
         </template>
       </Card>
