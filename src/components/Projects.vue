@@ -25,6 +25,14 @@ function openDialog(projectId) {
         </h1>
       </template>
       <p>{{ projectsData[selectedProject].description }}</p>
+      <div class="flex flex-col gap-3 mt-3">
+        <img
+            class="w-full object-fit"
+            v-for="image in projectsData[selectedProject].images"
+            :src="image"
+            alt="project screenshot"
+        />
+      </div>
       <a :href="projectsData[selectedProject].githubLink ? projectsData[selectedProject].githubLink : projectsData[selectedProject].itchLink">
         <Button class="mt-6" severity="secondary">
           <i v-if="projectsData[selectedProject].githubLink" class="devicon-github-plain"></i>
