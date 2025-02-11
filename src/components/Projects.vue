@@ -45,6 +45,7 @@ function openDialog(projectId) {
       Selected Projects
     </h1>
     <section
+        data-aos="fade-up"
         class="w-[90vw] sm:w-[80%] flex justify-center gap-6 flex-wrap"
     >
       <Card class="w-full lg:w-[25rem]">

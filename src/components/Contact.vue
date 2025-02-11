@@ -1,7 +1,5 @@
 <script setup>
   import Card from "primevue/card";
-  import InputText from "primevue/inputtext";
-  import Textarea from "primevue/textarea";
   import Button from "primevue/button";
 </script>
 
@@ -11,24 +9,21 @@
       Contact
     </h1>
     <form class="w-[95vw] sm:w-[36rem]">
-      <Card>
+      <Card data-aos="fade-up">
         <template #content>
-          <InputText
-              type="email"
-              placeholder="email"
-              name="email"
-              class="w-full mb-5"
-              required
-          />
-          <Textarea
-              placeholder="Message"
-              name="message"
-              class="w-full mb-5"
-              required
-          />
-          <Button class="w-full" type="submit">
-            Send Message
-          </Button>
+          <div class="w-full h-full flex flex-col gap-3">
+            <Button severity="secondary">
+              Email
+            </Button>
+            <Button severity="secondary">
+              <i class="devicon-github-plain"></i>
+              <span>Github</span>
+            </Button>
+            <Button severity="secondary">
+              <i class="devicon-linkedin-plain"></i>
+              <span>Linkedin</span>
+            </Button>
+          </div>
         </template>
       </Card>
     </form>
