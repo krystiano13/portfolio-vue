@@ -9,6 +9,11 @@
         underscore.value = !underscore.value;
     }, 1000);
   });
+
+  function readMore() {
+    const element = document.querySelector("#work");
+    element.scrollIntoView({ block: "center" });
+  }
 </script>
 
 <template>
@@ -25,14 +30,16 @@
         <span :class="underscore ? `opacity-100` : `opacity-0`">_</span>
       </h2>
       <div class="flex items-center justify-center gap-6">
-        <Button class="flex align-center gap-3">
+        <Button @click="readMore" class="flex align-center gap-3">
           <div>Read More</div>
           <i class="pi pi-search"></i>
         </Button>
-        <Button class="flex align-center gap-3" severity="secondary">
-          <div>Show CV</div>
-          <i class="pi pi-user"></i>
-        </Button>
+        <a href="/portfolio.pdf">
+          <Button class="flex align-center gap-3" severity="secondary">
+            <div>Show CV</div>
+            <i class="pi pi-user"></i>
+          </Button>
+        </a>
       </div>
     </section>
   </div>
