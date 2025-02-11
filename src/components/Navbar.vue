@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <nav v-auto-animate class="w-full p-5 font-medium text-lg fixed z-10 backdrop-blur-lg  bg-gray-900/15">
+  <nav class="w-full p-5 font-medium text-lg fixed z-10 backdrop-blur-lg  bg-gray-900/15">
    <section class="hidden sm:flex items-center gap-4">
      <a href="#hero">
        Home
@@ -33,7 +33,7 @@
         <i class="pi pi-bars"></i>
       </Button>
    </section>
-   <section class="flex flex-col items-center gap-6 sm:hidden" v-if="navOpen">
+   <section class="flex transition flex-col items-center gap-6 sm:hidden" :class="navOpen ? 'opacity-100' : 'opacity-0 h-0 pointer-events-none'">
      <a href="#home">
        Home
      </a>
