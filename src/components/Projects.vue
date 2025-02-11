@@ -25,6 +25,13 @@ function openDialog(projectId) {
         </h1>
       </template>
       <p>{{ projectsData[selectedProject].description }}</p>
+      <a :href="projectsData[selectedProject].githubLink ? projectsData[selectedProject].githubLink : projectsData[selectedProject].itchLink">
+        <Button class="mt-6" severity="secondary">
+          <i v-if="projectsData[selectedProject].githubLink" class="devicon-github-plain"></i>
+          <span v-if="projectsData[selectedProject].githubLink">Github Link</span>
+          <span v-if="projectsData[selectedProject].itchLink">Itch.io Link</span>
+        </Button>
+      </a>
     </Dialog>
     <h1 data-aos="fade-up" class="text-center text-5xl font-semibold mt-16 mb-16">
       Selected Projects
