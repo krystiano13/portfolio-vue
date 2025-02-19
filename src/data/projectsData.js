@@ -21,7 +21,7 @@ export const projectsData = [
     {
         id: 2,
         name: "Hospital doors",
-        description: "Hospital doors is simple survival horror game made in Gdevelop with help of Magica Voxel." +
+        description: "Hospital doors is simple survival horror game made in Gdevelop with help of Magica Voxel for Brackeys' Game Jam." +
                      "Your objective is to find 7 keys and escape from the location, but you need to be aware of monsters roaming around the map.",
         images: [hd1,hd2],
         githubLink: "",
