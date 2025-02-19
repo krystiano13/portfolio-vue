@@ -11,22 +11,27 @@
 
 <template>
   <nav class="w-full p-5 font-medium text-lg fixed z-10 backdrop-blur-lg  bg-gray-900/15">
-   <section class="hidden sm:flex items-center gap-4">
-     <a href="#hero">
-       Home
-     </a>
-     <a href="#work">
-       Experience
-     </a>
-     <a href="#skills">
-       Skills
-     </a>
-     <a href="#projects">
-       Projects
-     </a>
-     <a href="#contact">
-       Contact
-     </a>
+   <section class="w-full hidden sm:flex justify-center items-center gap-4">
+    <div class="w-full flex justify-between gap-4 max-w-4xl">
+      <p>Krystian Zieja</p>
+      <section class="flex items-center gap-4">
+        <a href="#hero">
+          Home
+        </a>
+        <a href="#work">
+          Experience
+        </a>
+        <a href="#skills">
+          Skills
+        </a>
+        <a href="#projects">
+          Projects
+        </a>
+        <a href="#contact">
+          Contact
+        </a>
+      </section>
+     </div>
    </section>
    <section class="flex items-center justify-end sm:hidden">
       <Button @click="switchNav()" class="w-12 h-12">

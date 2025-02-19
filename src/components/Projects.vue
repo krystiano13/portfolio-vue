@@ -17,7 +17,7 @@ function openDialog(projectId) {
 </script>
 
 <template>
-  <div id="projects" class="w-full h-auto pb-16 flex flex-col justify-center items-center">
+  <div id="projects" class="w-full max-w-4xl h-auto pb-16 flex flex-col justify-center items-center">
     <Dialog class="w-2xl" v-model:visible="dialogVisible">
       <template #header>
         <h1 class="text-2xl font-medium mr-6">
@@ -46,9 +46,9 @@ function openDialog(projectId) {
     </h1>
     <section
         data-aos="fade-up"
-        class="w-[90vw] sm:w-[80%] flex justify-center gap-6 flex-wrap"
+        class="w-full flex justify-between gap-6 flex-wrap"
     >
-      <Card class="w-full lg:w-[25rem]">
+      <Card class="w-full lg:w-[27rem]">
         <template #title>
           <h2 class="text-3xl">{{ projectsData[0].name }}</h2>
         </template>
@@ -72,7 +72,7 @@ function openDialog(projectId) {
           </Button>
         </template>
       </Card>
-      <Card class="w-full lg:w-[25rem]">
+      <Card class="w-full lg:w-[27rem]">
         <template #title>
           <h2 class="text-3xl">{{ projectsData[1].name }}</h2>
         </template>
@@ -95,7 +95,7 @@ function openDialog(projectId) {
           </Button>
         </template>
       </Card>
-      <Card class="w-full lg:w-[25rem]">
+      <Card class="w-full">
         <template #title>
           <h2 class="text-3xl">{{ projectsData[2].name }}</h2>
         </template>

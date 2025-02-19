@@ -10,10 +10,10 @@
 </script>
 
 <template>
-  <div id="work" class="w-full h-auto pb-16 flex flex-col justify-center items-center">
+  <div id="work" class="w-full max-w-4xl h-auto pb-16 flex flex-col justify-center items-center">
     <h1 data-aos="fade-up" class="text-center text-4xl sm:text-5xl font-semibold mb-24">Work Experience</h1>
     <section class="w-full hidden sm:flex justify-center items-center">
-      <Timeline class="max-w-4xl" align="alternate" :value="data.jobs">
+      <Timeline class="max-w-4xl !w-full" align="alternate" :value="data.jobs">
         <template #content="props">
           <Card :data-aos="props.index === 0 ? 'fade-right' : 'fade-left'">
             <template #title>
@@ -28,7 +28,7 @@
         </template>
       </Timeline>
     </section>
-    <section class="sm:hidden flex flex-col items-center gap-6 max-w-[90vw]">
+    <section class="sm:hidden flex flex-col items-center gap-6 w-full">
       <Card data-aos="fade-up" class="w-full" v-for="job in data.jobs">
         <template #title>
           <h2 class="text-xl sm:text-2xl">{{ job.title }}</h2>

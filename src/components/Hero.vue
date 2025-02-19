@@ -21,7 +21,7 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <section class="absolute w-full h-full flex flex-col items-center justify-center gap-7 p-4 pt-8">
-      <h1 class="text-6xl max-w-xl text-center font-semibold">
+      <h1 class="text-6xl max-w-4xl text-center font-semibold">
         Hi, I'm
         <span class="text-emerald-500">Krystian Zieja</span>
       </h1>

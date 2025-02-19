@@ -8,7 +8,7 @@
     <h1 data-aos="fade-up" class="text-center text-4xl sm:text-5xl font-semibold mt-16 mb-16">
       Contact
     </h1>
-    <form class="w-[95vw] sm:w-[36rem]">
+    <form class="max-w-4xl w-full">
       <Card data-aos="fade-up">
         <template #content>
           <div class="w-full h-full flex flex-col gap-3">
