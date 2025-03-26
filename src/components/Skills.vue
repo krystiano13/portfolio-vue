@@ -10,7 +10,7 @@
       <Button 
         v-for="skill in skillsData" 
         severity="secondary" 
-        class="w-24 md:w-32 min-h-28 md:min-h-40 flex flex-col justify-center items-center"
+        class="w-24 md:w-32 min-h-28 md:min-h-40 flex flex-col justify-center items-center glass backdrop-blur-lg"
       >
         <i class="md:scale-150" :class="`devicon-${skill.toLowerCase()}-plain`"></i>
         <p class="md:mt-6 text-base">
